@@ -14,7 +14,7 @@ import com.ma.cryptoappcompose.view.CryptoDetailScreen
 import com.ma.cryptoappcompose.view.CryptoListScreen
 import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
