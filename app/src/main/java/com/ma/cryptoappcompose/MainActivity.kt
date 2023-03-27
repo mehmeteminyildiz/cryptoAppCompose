@@ -7,8 +7,8 @@ import androidx.compose.runtime.remember
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.ma.cryptoappcompose.ui.theme.CryptoAppComposeTheme
 import com.ma.cryptoappcompose.view.CryptoDetailScreen
 import com.ma.cryptoappcompose.view.CryptoListScreen
@@ -24,7 +24,6 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "crypto_list_screen") {
                     composable("crypto_list_screen") {
-                        // CryptListScreen
                         CryptoListScreen(navController = navController)
                     }
                     composable(
