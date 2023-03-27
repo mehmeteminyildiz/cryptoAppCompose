@@ -4,6 +4,7 @@ import com.ma.cryptoappcompose.data.CryptoDetail
 import com.ma.cryptoappcompose.data.CryptoList
 import com.ma.cryptoappcompose.util.Constants
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 /**
 created by Mehmet E. Yıldız
@@ -15,7 +16,9 @@ interface CryptoAPI {
 
 
     @GET(Constants.DETAIL_END_POINT)
-    suspend fun getCrypto(): CryptoDetail
+    suspend fun getCrypto(
+        @Query("id") id: Int
+    ): CryptoDetail
 
 
 }
