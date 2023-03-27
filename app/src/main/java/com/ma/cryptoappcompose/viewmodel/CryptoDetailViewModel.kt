@@ -17,7 +17,7 @@ class CryptoDetailViewModel
 ) : ViewModel() {
 
     // Yöntem 2: suspend kullanmak
-    suspend fun getDetail(id: Int): Resource<CryptoDetail> {
+    suspend fun getDetail(id: String): Resource<CryptoDetail> {
         return repository.getCryptoDetail(id)
     }
 }

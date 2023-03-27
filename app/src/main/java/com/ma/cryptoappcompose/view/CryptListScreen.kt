@@ -62,9 +62,7 @@ fun CryptoListScreen(
             // list
             CryptoList(navController = navController)
         }
-
     }
-
 }
 
 @Composable

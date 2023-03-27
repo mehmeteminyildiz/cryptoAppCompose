@@ -28,7 +28,7 @@ class CryptoRepository
         return Resource.Success(response)
     }
 
-    suspend fun getCryptoDetail(id:Int): Resource<CryptoDetail> {
+    suspend fun getCryptoDetail(id:String): Resource<CryptoDetail> {
         val response = try {
             api.getCrypto(id)
         } catch (e: Exception) {

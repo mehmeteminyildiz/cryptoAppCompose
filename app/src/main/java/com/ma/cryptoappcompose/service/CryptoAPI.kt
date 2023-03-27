@@ -17,7 +17,7 @@ interface CryptoAPI {
 
     @GET(Constants.DETAIL_END_POINT)
     suspend fun getCrypto(
-        @Query("id") id: Int
+        @Query("id") id: String
     ): CryptoDetail
 
 
